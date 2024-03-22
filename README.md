@@ -28,7 +28,7 @@ Share some ❤️ and star repo to support the project.
 File('1.jpg').widgetImage
 ```
 
-Supports [all formats from the package image](https://github.com/brendan-duncan/image/blob/main/doc/formats.md).
+Supports [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.
 
 ### Package Image to Flutter Widget
 
@@ -39,10 +39,10 @@ Image(...).widgetImage
 ### ImageProvider to raw bytes
 
 ```dart
-AssetImage('modern.webp').uint8List
+AssetImage('nature.webp').uint8List
 ```
 
-Supports all image providers: assets, files, memory, network, etc.
+Supports all `ImageProvider`s: assets, files, memory, network, etc.
 
 See folders `example` and `test` for more use cases.
 
@@ -54,7 +54,7 @@ import 'package:flutter/widgets.dart' as widget;
 import 'package:image/image.dart' as image;
 ```
 
-|               | extension name  | ➡️  | image.Image | ui.Image | widget.Image | ImageProvider | Base64String | Uint8List |
+|               | extension name  |     | image.Image | ui.Image | widget.Image | ImageProvider | Base64String | Uint8List |
 | ------------- | --------------- | --- | :---------: | :------: | :----------: | :-----------: | :----------: | --------- |
 | image.Image   | `imageImage`    |     |             |    ✅    |      ✅      |      ✅       |      ✅      | ✅        |
 | ui.Image      | `uiImage`       |     |     ✅      |          |      ✅      |      ✅       |      ✅      | ✅        |
@@ -62,7 +62,7 @@ import 'package:image/image.dart' as image;
 |               |                 |     |             |          |              |               |              |           |
 | ImageProvider | `imageProvider` |     |     ✅      |    ✅    |      ✅      |               |      ✅      | ✅        |
 |               |                 |     |             |          |              |               |              |           |
-| Base64 String | `base64String`  |     |     ✅      |    ✅    |      ✅      |      ✅       |              | ✅        |
+| Base64String  | `base64String`  |     |     ✅      |    ✅    |      ✅      |      ✅       |              | ✅        |
 | Uint8List     | `uint8List`     |     |     ✅      |    ✅    |      ✅      |      ✅       |      ✅      |           |
 
 ## Screenshots

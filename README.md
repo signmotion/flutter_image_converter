@@ -13,7 +13,7 @@
 [![Pub Score](https://img.shields.io/pub/points/flutter_image_converter?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_image_converter/score)
 
 Converts Dart & Flutter images: ui, widgets, package [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
-You no longer have to worry about writing code to convert images in different formats.
+**You no longer have to worry about writing code to convert images in different formats.**
 Works in any direction as extensions.
 The easy-to-use and well-tested package.
 Feel free to use it in your awesome project.

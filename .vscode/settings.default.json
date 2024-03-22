@@ -1,0 +1,101 @@
+{
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "fira-code-material-minimal",
+  "editor.fontFamily": "fira-code-nerd, FiraCode Nerd Font, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true,
+    "uk": true
+  },
+
+  "editor.accessibilitySupport": "off",
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "і": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+
+  "typescript.tsserver.watchOptions": {},
+
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "dart.openDevTools": "flutter",
+  "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  "[env]": {
+    "editor.defaultFormatter": "IronGeek.vscode-env"
+  },
+
+  "files.associations": {
+    ".env": "env"
+  },
+
+  "hidefiles.configurationType": "local",
+  "hidefiles.globalConfig": {
+    "profiles": [
+      {
+        "hidden": [
+          "**/.*",
+          "analysis_options.yaml",
+          "CHANGELOG.md",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "LICENSE",
+          "pubspec.lock",
+          "SECURITY.md",
+          "STYLEGUIDE.md",
+          "**/README.md",
+          "**/android/",
+          "**/build/",
+          "**/ios/",
+          "**/windows/",
+          "**/app.iml",
+          "**/devtools_options.yaml",
+          "**/pubspec.*"
+        ],
+        "name": "Flutter",
+        "description": "",
+        "detail": "",
+        "peek": []
+      },
+      {
+        "hidden": ["**/__pycache__", "**/__init__.py"],
+        "name": "Python",
+        "description": "",
+        "detail": "",
+        "peek": []
+      },
+      {
+        "name": "Default",
+        "detail": "",
+        "description": "Test",
+        "hidden": [".vscode/"]
+      }
+    ]
+  },
+  "hidefiles.selectedProfile": "Python",
+  "hide-files.files": []
+}

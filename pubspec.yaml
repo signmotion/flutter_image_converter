@@ -1,0 +1,40 @@
+name: flutter_image_converter
+description: >-
+  Ultimative converter between Dart & Flutter images: ui, widgets, package image,
+  ImageProvider, raw bytes, Base64 string.
+  You no longer have to worry about writing code to convert images in
+  different formats. Works in any directions.
+repository: https://github.com/signmotion/flutter_image_converter
+topics:
+  - converter
+  - image
+  - widget
+  - ui
+  - bytes
+
+# Format:
+#   version: major.minor.patch
+# You can calculate the number version code by this formula:
+#   code = m[A]jor * 100 * 100 + m[I]nor * 100 + [P]atch
+# Otherwise: +AAIIPP
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image: ^4.1.7
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  lints: ^3.0.0
+  test: ^1.25.2
+
+flutter:
+  uses-material-design: true
+
+screenshots:
+  - description: "FlutterImageConverter demo"
+    path: images/screenshots/1.png

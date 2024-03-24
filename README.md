@@ -12,8 +12,8 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/issues)
 [![Pub Score](https://img.shields.io/pub/points/flutter_image_converter?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_image_converter/score)
 
-Well tested and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
-Works in any direction as extensions.
+Well-tested and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
+Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
 
@@ -25,6 +25,12 @@ Share some ❤️ and star repo to support the project.
 
 ```dart
 File('1.jpg').widgetImage
+```
+
+### Raw bytes from File to UI Widget
+
+```dart
+File('1.jpg').uiImage
 ```
 
 Supports [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.

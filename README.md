@@ -72,8 +72,9 @@ import 'package:image/image.dart' as image;
 
 ## Screenshots
 
-| ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png) | ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png)
-| ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png) |
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png)
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png)
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png)
 
 ## Welcome
 

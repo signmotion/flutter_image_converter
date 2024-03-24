@@ -27,13 +27,13 @@ Share some ❤️ and star repo to support the project.
 File('1.jpg').widgetImage
 ```
 
-### Raw bytes from File to UI Widget
+Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.
+
+### ImageProvider to UI Widget
 
 ```dart
-File('1.jpg').uiImage
+await AssetImage('1.jpg').uiImage
 ```
-
-Supports [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.
 
 ### Package Image to Flutter Widget
 
@@ -41,10 +41,16 @@ Supports [all formats](https://github.com/brendan-duncan/image/blob/main/doc/for
 Image(...).widgetImage
 ```
 
-### ImageProvider to raw bytes
+### ImageProvider to PNG raw bytes
 
 ```dart
-AssetImage('nature.webp').uint8List
+AssetImage('nature.webp').pngUint8List
+```
+
+### File to PNG raw bytes
+
+```dart
+File('nature.webp').pngUint8List
 ```
 
 Supports the image providers:
@@ -65,16 +71,15 @@ import 'package:flutter/widgets.dart' as widget;
 import 'package:image/image.dart' as image;
 ```
 
-|               | extension name  |     | image.Image | ui.Image | widget.Image | ImageProvider | Base64String | Uint8List |
-| ------------- | --------------- | --- | :---------: | :------: | :----------: | :-----------: | :----------: | --------- |
-| image.Image   | `imageImage`    |     |             |    ✅    |      ✅      |      ✅       |      ✅      | ✅        |
-| ui.Image      | `uiImage`       |     |     ✅      |          |      ✅      |      ✅       |      ✅      | ✅        |
-| widget.Image  | `widgetImage`   |     |     ✅      |    ✅    |              |      ✅       |      ✅      | ✅        |
-|               |                 |     |             |          |              |               |              |           |
-| ImageProvider | `imageProvider` |     |     ✅      |    ✅    |      ✅      |               |      ✅      | ✅        |
-|               |                 |     |             |          |              |               |              |           |
-| Base64String  | `base64String`  |     |     ✅      |    ✅    |      ✅      |      ✅       |              | ✅        |
-| Uint8List     | `uint8List`     |     |     ✅      |    ✅    |      ✅      |      ✅       |      ✅      |           |
+|               | extension name  |     | image.Image | ui.Image | widget.Image | ImageProvider | Uint8List |
+| ------------- | --------------- | --- | :---------: | :------: | :----------: | :-----------: | --------- |
+| image.Image   | `imageImage`    |     |             |    ✅    |      ✅      |      ✅       | ✅        |
+| ui.Image      | `uiImage`       |     |     ✅      |          |      ✅      |      ✅       | ✅        |
+| widget.Image  | `widgetImage`   |     |     ✅      |    ✅    |              |      ✅       | ✅        |
+|               |                 |     |             |          |              |               |           |
+| ImageProvider | `imageProvider` |     |     ✅      |    ✅    |      ✅      |               | ✅        |
+|               |                 |     |             |          |              |               |           |
+| Uint8List     | `uint8List`     |     |     ✅      |    ✅    |      ✅      |      ✅       |           |
 
 ## Screenshots
 
@@ -96,6 +101,7 @@ General questions are best asked on
 ## TODO
 
 - Explane `Image`, `ImageProvider`, etc. [1](https://stackoverflow.com/a/56431615/963948)
+- Detect formats provided `instantiateImageCodec`.
 - Extensions for transform images to any formats?
 
 Created [with ❤️](https://syrokomskyi.com)

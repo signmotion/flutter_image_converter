@@ -16,5 +16,6 @@ extension ImageConverterOnBase64StringExt on String {
   /// Use PNG format.
   String get base64String => uint8List.base64String;
 
+  /// Use PNG format.
   Uint8List get uint8List => base64Decode(this);
 }

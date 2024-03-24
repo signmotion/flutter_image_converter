@@ -31,6 +31,7 @@ extension ImageConverterOnUint8ListExt on Uint8List {
   /// Recognizes the same formats as the package [image.Image].
   widget.ImageProvider get imageProvider => widget.MemoryImage(pngImageBytes);
 
+  /// Use PNG format.
   String get base64String => base64Encode(pngImageBytes);
 
   /// Converts [Uint8List] to PNG format if needed.

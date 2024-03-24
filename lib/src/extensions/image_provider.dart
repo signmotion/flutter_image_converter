@@ -19,10 +19,13 @@ extension ImageConverterOnImageProviderExt on widget.ImageProvider {
 
   widget.Image get widgetImage => widget.Image(image: this);
 
+  /// Use PNG format.
   Future<String> get base64String async => (await uint8List).base64String;
 
+  /// Use PNG format.
   Future<Uint8List> get uint8List async =>
       (await byteData).buffer.asUint8List();
 
+  /// Use PNG format.
   Future<ByteData> get byteData async => (await uiImage).byteData;
 }

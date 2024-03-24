@@ -1,16 +1,22 @@
 part of '../../flutter_image_converter.dart';
 
 extension ImageConverterOnFileExt on File {
-  image.Image get imageImage => uint8List.imageImage;
+  image.Image get imageImage => pngUint8List.imageImage;
 
-  Future<ui.Image> get uiImage async => uint8List.uiImage;
+  Future<ui.Image> get uiImage async => pngUint8List.uiImage;
 
-  widget.Image get widgetImage => uint8List.widgetImage;
+  widget.Image get widgetImage => pngUint8List.widgetImage;
 
   widget.ImageProvider get imageProvider => widget.FileImage(this);
 
-  String get base64String => uint8List.base64String;
+  /// Raw binary data from [File].
+  Uint8List get uint8List => readAsBytesSync();
 
-  /// Use PNG format.
-  Uint8List get uint8List => readAsBytesSync().pngImageBytes;
+  /// Converts [uint8List] to PNG format if needed.
+  Uint8List get pngUint8List {
+    final raw = uint8List;
+    return image.PngDecoder().isValidFile(raw)
+        ? raw
+        : raw.imageImage.pngUint8List;
+  }
 }

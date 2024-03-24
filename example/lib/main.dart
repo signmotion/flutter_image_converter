@@ -31,7 +31,6 @@ class App extends StatelessWidget {
         ...demoPackageImage,
         ...demoFileImage,
         ...demoBytesImage,
-        ...demoBase64StringImage,
       ]
           .map((w) => Padding(padding: const EdgeInsets.all(12), child: w))
           .toList();
@@ -73,20 +72,10 @@ class App extends StatelessWidget {
         ),
       ];
 
-  List<Widget> get demoBase64StringImage => [
-        const Text('From base64 String, any format'),
-        FutureBuilder(
-          future: source(5).base64String,
-          builder: (_, snapshot) => snapshot.data == null
-              ? const SizedBox()
-              : snapshot.data!.widgetImage,
-        ),
-      ];
-
   List<Widget> get demoUiImage => [
         const Text('From ui.Image'),
         FutureBuilder(
-          future: source(6).uiImage,
+          future: source(5).uiImage,
           builder: (_, snapshot) => snapshot.data == null
               ? const SizedBox()
               : FutureBuilder(

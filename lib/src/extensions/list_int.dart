@@ -1,16 +1,17 @@
 part of '../../flutter_image_converter.dart';
 
 extension ImageConverterOnListIntExt on List<int> {
-  image.Image get imageImage => uint8List.imageImage;
+  image.Image get imageImage => pngUint8List.imageImage;
 
-  Future<ui.Image> get uiImage async => uint8List.uiImage;
+  Future<ui.Image> get uiImage async => pngUint8List.uiImage;
 
-  widget.Image get widgetImage => uint8List.widgetImage;
+  widget.Image get widgetImage => pngUint8List.widgetImage;
 
-  widget.ImageProvider get imageProvider => uint8List.imageProvider;
+  widget.ImageProvider get imageProvider => pngUint8List.imageProvider;
 
-  String get base64String => uint8List.base64String;
+  /// Use raw format from [List<int>].
+  Uint8List get uint8List => Uint8List.fromList(this);
 
-  /// Use PNG format.
-  Uint8List get uint8List => Uint8List.fromList(this).pngImageBytes;
+  /// Converts [uint8List] to PNG format if needed.
+  Uint8List get pngUint8List => uint8List.pngUint8List;
 }

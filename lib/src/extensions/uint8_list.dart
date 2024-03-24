@@ -18,7 +18,7 @@ extension ImageConverterOnUint8ListExt on Uint8List {
 
   /// Recognizes the same formats as the package [image.Image].
   Future<ui.Image> get uiImage async {
-    final codec = await ui.instantiateImageCodec(pngImageBytes);
+    final codec = await ui.instantiateImageCodec(pngUint8List);
     final frameInfo = await codec.getNextFrame();
 
     return frameInfo.image;
@@ -29,12 +29,9 @@ extension ImageConverterOnUint8ListExt on Uint8List {
   widget.Image get widgetImage => imageProvider.widgetImage;
 
   /// Recognizes the same formats as the package [image.Image].
-  widget.ImageProvider get imageProvider => widget.MemoryImage(pngImageBytes);
-
-  /// Use PNG format.
-  String get base64String => base64Encode(pngImageBytes);
+  widget.ImageProvider get imageProvider => widget.MemoryImage(pngUint8List);
 
   /// Converts [Uint8List] to PNG format if needed.
-  Uint8List get pngImageBytes =>
+  Uint8List get pngUint8List =>
       image.PngDecoder().isValidFile(this) ? this : imageImage.uint8List;
 }

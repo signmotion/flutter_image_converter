@@ -1,7 +1,6 @@
 library;
 
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
@@ -9,7 +8,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/widgets.dart' as widget;
 import 'package:image/image.dart' as image;
 
-part 'src/extensions/base64_string.dart';
 part 'src/extensions/file.dart';
 part 'src/extensions/image_image.dart';
 part 'src/extensions/image_provider.dart';

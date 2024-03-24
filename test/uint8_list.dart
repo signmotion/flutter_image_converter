@@ -32,11 +32,6 @@ void main() async {
     checkImage(await r.imageImage, other: etalon);
   });
 
-  test('base64String', () {
-    final r = source.base64String;
-    checkImage(r.imageImage, other: etalon);
-  });
-
   test('uint8List', () {
     final r = source;
     checkImage(r.imageImage, other: etalon);

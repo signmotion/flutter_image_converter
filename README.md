@@ -12,10 +12,9 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/issues)
 [![Pub Score](https://img.shields.io/pub/points/flutter_image_converter?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_image_converter/score)
 
-Converts Dart & Flutter images: ui, widgets, package [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
-**You no longer have to worry about writing code to convert images in different formats.**
+Well tested and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
 Works in any direction as extensions.
-The easy-to-use and well-tested package.
+**You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
@@ -42,7 +41,13 @@ Image(...).widgetImage
 AssetImage('nature.webp').uint8List
 ```
 
-Supports all `ImageProvider`s: assets, files, memory, network, etc.
+Supports the image providers:
+
+- `AssetImage`
+- `FileImage`
+- `MemoryImage`
+- `NetworkImage`
+- any providers from [pub.dev](https://pub.dev/packages?q=image+provider) inherited from `ImageProvider`
 
 See folders `example` and `test` for more use cases.
 
@@ -67,9 +72,8 @@ import 'package:image/image.dart' as image;
 
 ## Screenshots
 
-![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png)
-![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png)
-![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png)
+| ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png) | ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png)
+| ![Screenshot - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png) |
 
 ## Welcome
 

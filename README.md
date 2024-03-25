@@ -115,6 +115,14 @@ The package **FlutterImageConverter** is open-source, stable and well-tested. De
 [GitHub](https://github.com/signmotion/flutter_image_converter). Feel free to report issues
 or create a pull-request there.
 
+And here is a curated list of how you can help:
+
+- Report parts of the documentation that are unclear.
+- Fix typos/grammar mistakes.
+- Update the documentation or add examples.
+- Report bugs and scenarios that are difficult to implement.
+- Implement new features by making a pull-request (look below).
+
 ## TODO (perhaps)
 
 Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contribute. But if you already get everything you need from this package but have some free time, let me write here what I have planned:

@@ -3,6 +3,13 @@
 All notable changes to the project `FlutterImageConverter` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.0
+
+- Provided `sync` and `async` (non-blocking) converters. Thanks [eibaan](https://www.reddit.com/user/eibaan/).
+- Introduced `pngByteData`.
+- Removed `base64String`.
+- Added an example and `Thanks` section to `README`.
+
 ## 0.1.1
 
 - Provided a better screeenshot representation in `README`.

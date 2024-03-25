@@ -93,21 +93,36 @@ import 'package:image/image.dart' as image;
 [<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.webp" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.webp)
 [<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.webp" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.webp)
 
-## Welcome
+## Thanks
+
+While working on projects, I meet people who make the project better with their outsider and professional view. I want to write down their names here..... and I'd be happy to add your name as well.
+
+⭐ [eibaan](https://reddit.com/user/eibaan)
+
+## Welcome to Inspiration
 
 Requests and suggestions are warmly welcome.
 
-This package is open-source, stable and well-tested. Development happens on
+Contributions are what make the open source community such a great place to learn, create, and be inspired.
+
+If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
+
+- [Guide to making a first contribution](https://github.com/firstcontributions/first-contributions). Many languages.
+- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
+- [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
+
+The package **FlutterImageConverter** is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/flutter_image_converter). Feel free to report issues
 or create a pull-request there.
 
-General questions are best asked on
-[StackOverflow](https://stackoverflow.com/questions/tagged/flutter_image_converter).
+## TODO (perhaps)
 
-## TODO
+Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contributing. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
 
 - Explane `Image`, `ImageProvider`, etc. [1](https://stackoverflow.com/a/56431615/963948)
 - Detect formats provided `instantiateImageCodec`.
-- Extensions for transform images to any formats?
+- Transform images to any formats?
+
+It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, I think these notes will help you choose a likely task and become a Contributor in the open source community.
 
 Created [with ❤️](https://syrokomskyi.com)

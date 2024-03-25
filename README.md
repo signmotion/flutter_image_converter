@@ -103,7 +103,7 @@ While working on projects, I meet people who make the project better with their 
 
 Requests and suggestions are warmly welcome.
 
-Contributions are what make the open source community such a great place to learn, create, and be inspired.
+Contributions are what make the open-source community such a great place to learn, create, and be inspired.
 
 If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
 
@@ -117,12 +117,12 @@ or create a pull-request there.
 
 ## TODO (perhaps)
 
-Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contributing. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
+Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contribute. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
 
 - Explane `Image`, `ImageProvider`, etc. [1](https://stackoverflow.com/a/56431615/963948)
 - Detect formats provided `instantiateImageCodec`.
 - Transform images to any formats?
 
-It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, I think these notes will help you choose a likely task and become a Contributor in the open source community.
+It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, these notes will help you choose the suitable feature and become a contributor to the open-source community.
 
 Created [with ❤️](https://syrokomskyi.com)

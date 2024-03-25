@@ -2,7 +2,10 @@ part of '../../flutter_image_converter.dart';
 
 extension ImageConverterOnUint8ListExt on Uint8List {
   /// Recognizes the same formats as the package [image.Image].
-  image.Image get imageImage {
+  Future<image.Image> get imageImage async => imageImageSync;
+
+  /// A sync variant.
+  image.Image get imageImageSync {
     final decoder = image.findDecoderForData(this);
     if (decoder == null) {
       throw Exception('Decoder for image not found.');
@@ -18,7 +21,7 @@ extension ImageConverterOnUint8ListExt on Uint8List {
 
   /// Recognizes the same formats as the package [image.Image].
   Future<ui.Image> get uiImage async {
-    final codec = await ui.instantiateImageCodec(pngUint8List);
+    final codec = await ui.instantiateImageCodec(await pngUint8List);
     final frameInfo = await codec.getNextFrame();
 
     return frameInfo.image;
@@ -26,12 +29,28 @@ extension ImageConverterOnUint8ListExt on Uint8List {
 
   /// Recognizes the same formats as the package [image.Image].
   /// Utilize [imageProvider].
-  widget.Image get widgetImage => imageProvider.widgetImage;
+  Future<widget.Image> get widgetImage async =>
+      (await imageProvider).widgetImage;
+
+  /// A sync variant.
+  widget.Image get widgetImageSync => imageProviderSync.widgetImageSync;
 
   /// Recognizes the same formats as the package [image.Image].
-  widget.ImageProvider get imageProvider => widget.MemoryImage(pngUint8List);
+  Future<widget.ImageProvider> get imageProvider async =>
+      widget.MemoryImage(await pngUint8List);
+
+  /// A sync variant.
+  widget.ImageProvider get imageProviderSync =>
+      widget.MemoryImage(pngUint8ListSync);
 
   /// Converts [Uint8List] to PNG format if needed.
-  Uint8List get pngUint8List =>
-      image.PngDecoder().isValidFile(this) ? this : imageImage.uint8List;
+  Future<Uint8List> get pngUint8List async =>
+      image.PngDecoder().isValidFile(this)
+          ? this
+          : await (await imageImage).uint8List;
+
+  /// A sync variant.
+  Uint8List get pngUint8ListSync => image.PngDecoder().isValidFile(this)
+      ? this
+      : imageImageSync.uint8ListSync;
 }

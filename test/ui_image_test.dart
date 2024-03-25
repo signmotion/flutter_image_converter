@@ -34,6 +34,6 @@ void main() async {
 
   test('uint8List', () async {
     final r = await source.uint8List;
-    checkImage(r.imageImage, other: etalon);
+    checkImage(r.imageImageSync, other: etalon);
   });
 }

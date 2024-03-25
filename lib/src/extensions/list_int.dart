@@ -1,17 +1,35 @@
 part of '../../flutter_image_converter.dart';
 
 extension ImageConverterOnListIntExt on List<int> {
-  image.Image get imageImage => pngUint8List.imageImage;
+  Future<image.Image> get imageImage async => (await pngUint8List).imageImage;
 
-  Future<ui.Image> get uiImage async => pngUint8List.uiImage;
+  /// A sync variant.
+  image.Image get imageImageSync => pngUint8ListSync.imageImageSync;
 
-  widget.Image get widgetImage => pngUint8List.widgetImage;
+  Future<ui.Image> get uiImage async => (await pngUint8List).uiImage;
 
-  widget.ImageProvider get imageProvider => pngUint8List.imageProvider;
+  Future<widget.Image> get widgetImage async =>
+      (await pngUint8List).widgetImage;
+
+  /// A sync variant.
+  widget.Image get widgetImageSync => pngUint8ListSync.widgetImageSync;
+
+  Future<widget.ImageProvider> get imageProvider async =>
+      (await pngUint8List).imageProvider;
+
+  /// A sync variant.
+  widget.ImageProvider get imageProviderSync =>
+      pngUint8ListSync.imageProviderSync;
 
   /// Use raw format from [List<int>].
-  Uint8List get uint8List => Uint8List.fromList(this);
+  Future<Uint8List> get uint8List async => Uint8List.fromList(this);
+
+  /// A sync variant.
+  Uint8List get uint8ListSync => Uint8List.fromList(this);
 
   /// Converts [uint8List] to PNG format if needed.
-  Uint8List get pngUint8List => uint8List.pngUint8List;
+  Future<Uint8List> get pngUint8List async => (await uint8List).pngUint8List;
+
+  /// A sync variant.
+  Uint8List get pngUint8ListSync => uint8ListSync.pngUint8ListSync;
 }

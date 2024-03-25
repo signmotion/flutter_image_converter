@@ -16,7 +16,10 @@ extension ImageConverterOnImageProviderExt on widget.ImageProvider {
     return (await completer.future as widget.ImageInfo).image;
   }
 
-  widget.Image get widgetImage => widget.Image(image: this);
+  Future<widget.Image> get widgetImage async => widget.Image(image: this);
+
+  /// A sync variant.
+  widget.Image get widgetImageSync => widget.Image(image: this);
 
   /// Use PNG format.
   Future<Uint8List> get uint8List async =>

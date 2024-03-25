@@ -37,7 +37,7 @@ class App extends StatelessWidget {
 
   List<Widget> get demoImageProvider => [
         const Text('From ImageProvider'),
-        source(1).widgetImage,
+        source(1).widgetImageSync,
       ];
 
   List<Widget> get demoPackageImage => [
@@ -46,7 +46,7 @@ class App extends StatelessWidget {
           future: source(2).imageImage,
           builder: (_, snapshot) => snapshot.data == null
               ? const SizedBox()
-              : snapshot.data!.widgetImage,
+              : snapshot.data!.widgetImageSync,
         ),
       ];
 
@@ -58,7 +58,7 @@ class App extends StatelessWidget {
           future: source(3).uint8List,
           builder: (_, snapshot) => snapshot.data == null
               ? const SizedBox()
-              : snapshot.data!.widgetImage,
+              : snapshot.data!.widgetImageSync,
         ),
       ];
 
@@ -68,7 +68,7 @@ class App extends StatelessWidget {
           future: source(4).uint8List,
           builder: (_, snapshot) => snapshot.data == null
               ? const SizedBox()
-              : snapshot.data!.widgetImage,
+              : snapshot.data!.widgetImageSync,
         ),
       ];
 

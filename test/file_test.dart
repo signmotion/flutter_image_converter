@@ -10,7 +10,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final source = File('./test/data/h.jpg');
-  final etalon = source.imageImage;
+  final etalon = source.imageImageSync;
 
   test('imageImage', () {
     checkImage(
@@ -29,17 +29,17 @@ void main() async {
   });
 
   test('widgetImage', () async {
-    final r = source.widgetImage;
+    final r = source.widgetImageSync;
     checkImage(await r.imageImage, other: etalon);
   });
 
   test('imageProvider', () async {
-    final r = source.imageProvider;
+    final r = source.imageProviderSync;
     checkImage(await r.imageImage, other: etalon);
   });
 
   test('uint8List', () {
-    final r = source.uint8List;
-    checkImage(r.imageImage, other: etalon);
+    final r = source.uint8ListSync;
+    checkImage(r.imageImageSync, other: etalon);
   });
 }

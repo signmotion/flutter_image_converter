@@ -9,7 +9,7 @@ import 'helpers/check_image.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final source = File('./test/data/h.jpg').widgetImage;
+  final source = File('./test/data/h.jpg').widgetImageSync;
   final etalon = await source.imageImage;
 
   test('imageImage', () async {
@@ -34,6 +34,6 @@ void main() async {
 
   test('uint8List', () async {
     final r = await source.uint8List;
-    checkImage(r.imageImage, other: etalon);
+    checkImage(r.imageImageSync, other: etalon);
   });
 }

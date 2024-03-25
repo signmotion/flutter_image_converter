@@ -1,22 +1,46 @@
 part of '../../flutter_image_converter.dart';
 
 extension ImageConverterOnFileExt on File {
-  image.Image get imageImage => pngUint8List.imageImage;
+  Future<image.Image> get imageImage async => (await pngUint8List).imageImage;
 
-  Future<ui.Image> get uiImage async => pngUint8List.uiImage;
+  /// A sync version.
+  image.Image get imageImageSync => pngUint8ListSync.imageImageSync;
 
-  widget.Image get widgetImage => pngUint8List.widgetImage;
+  Future<ui.Image> get uiImage async => (await pngUint8List).uiImage;
 
-  widget.ImageProvider get imageProvider => widget.FileImage(this);
+  Future<widget.Image> get widgetImage async =>
+      (await pngUint8List).widgetImage;
+
+  /// A sync version.
+  widget.Image get widgetImageSync => pngUint8ListSync.widgetImageSync;
+
+  Future<widget.ImageProvider> get imageProvider async =>
+      widget.FileImage(this);
+
+  /// A sync version.
+  widget.ImageProvider get imageProviderSync => widget.FileImage(this);
 
   /// Raw binary data from [File].
-  Uint8List get uint8List => readAsBytesSync();
+  Future<Uint8List> get uint8List => readAsBytes();
+
+  /// Raw binary data from [File].
+  /// A sync version.
+  Uint8List get uint8ListSync => readAsBytesSync();
 
   /// Converts [uint8List] to PNG format if needed.
-  Uint8List get pngUint8List {
-    final raw = uint8List;
+  Future<Uint8List> get pngUint8List async {
+    final raw = await uint8List;
     return image.PngDecoder().isValidFile(raw)
         ? raw
-        : raw.imageImage.pngUint8List;
+        : await (await raw.imageImage).pngUint8List;
+  }
+
+  /// Converts [uint8List] to PNG format if needed.
+  /// A sync version.
+  Uint8List get pngUint8ListSync {
+    final raw = uint8ListSync;
+    return image.PngDecoder().isValidFile(raw)
+        ? raw
+        : raw.imageImageSync.pngUint8ListSync;
   }
 }

@@ -35,4 +35,4 @@ flutter:
 
 screenshots:
   - description: "FlutterImageConverter demo"
-    path: images/screenshots/1.png
+    path: images/screenshots/1.webp

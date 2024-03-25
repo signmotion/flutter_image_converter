@@ -29,7 +29,7 @@ File('1.jpg').widgetImage
 
 Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.
 
-### ImageProvider to UI Widget
+### ImageProvider to UI Image
 
 ```dart
 await AssetImage('1.jpg').uiImage
@@ -45,6 +45,12 @@ Image(...).widgetImage
 
 ```dart
 AssetImage('nature.webp').pngUint8List
+```
+
+### Any formatted raw bytes to Widget Image
+
+```dart
+bytes.widgetImage
 ```
 
 ### File to PNG raw bytes
@@ -83,9 +89,9 @@ import 'package:image/image.dart' as image;
 
 ## Screenshots
 
-[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.png)
-[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.png)
-[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.png)
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.webp" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/1.webp)
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.webp" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/2.webp)
+[<img src="https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.webp" width="600"/>](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/screenshots/3.webp)
 
 ## Welcome
 

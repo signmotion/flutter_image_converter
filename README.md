@@ -17,6 +17,14 @@ Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
 
+| Android | iOS | Linux | MacOS | Web | Windows |              |
+| :-----: | :-: | :---: | :---: | :-: | :-----: | :----------- |
+|   ✅    | ✅  |  ✅   |  ✅   |  ✘  |   ✅    | **platform** |
+
+| Dart | Flutter |         |
+| :--: | :-----: | :------ |
+|  ✅  |   ✅    | **SDK** |
+
 Share some ❤️ and star repo to support the project.
 
 ## Usage
@@ -128,7 +136,10 @@ And here is a curated list of how you can help:
 Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contribute. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
 
 - Explane `Image`, `ImageProvider`, etc. [1](https://stackoverflow.com/a/56431615/963948)
+- Check out the Web platform.
 - Detect formats provided `instantiateImageCodec`.
+- SVG?
+- IconData?
 - Transform images to any formats?
 
 It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, these notes will help you choose the suitable feature and become a contributor to the open-source community.

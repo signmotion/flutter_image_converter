@@ -21,7 +21,7 @@ Share some ❤️ and star repo to support the project.
 
 ## Usage
 
-### Raw bytes from File to Flutter Widget
+### Raw bytes from File to Widget Image
 
 ```dart
 File('1.jpg').widgetImage
@@ -35,16 +35,10 @@ Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/f
 await AssetImage('1.jpg').uiImage
 ```
 
-### Package Image to Flutter Widget
+### Package Image to Widget Image
 
 ```dart
 Image(...).widgetImage
-```
-
-### ImageProvider to PNG raw bytes
-
-```dart
-AssetImage('nature.webp').pngUint8List
 ```
 
 ### Any formatted raw bytes to Widget Image
@@ -57,6 +51,12 @@ bytes.widgetImage
 
 ```dart
 File('nature.webp').pngUint8List
+```
+
+### ImageProvider to PNG raw bytes
+
+```dart
+AssetImage('nature.webp').pngUint8List
 ```
 
 Supports the image providers:

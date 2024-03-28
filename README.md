@@ -12,7 +12,7 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/issues)
 [![Pub Score](https://img.shields.io/pub/points/flutter_image_converter?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_image_converter/score)
 
-Well-tested and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
+[Well-tested](https://github.com/signmotion/flutter_image_converter/tree/master/test) and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
 Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
@@ -59,6 +59,12 @@ bytes.widgetImage
 
 ```dart
 File('nature.webp').pngUint8List
+```
+
+### File to BMP raw bytes
+
+```dart
+File('nature.webp').bmpUint8List
 ```
 
 ### ImageProvider to PNG raw bytes

@@ -43,14 +43,25 @@ extension ImageConverterOnUint8ListExt on Uint8List {
   widget.ImageProvider get imageProviderSync =>
       widget.MemoryImage(pngUint8ListSync);
 
+  /// Converts [Uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async =>
+      image.BmpDecoder().isValidFile(this)
+          ? this
+          : await (await imageImage).bmpUint8List;
+
+  /// A sync variant.
+  Uint8List get bmpUint8ListSync => image.BmpDecoder().isValidFile(this)
+      ? this
+      : imageImageSync.bmpUint8ListSync;
+
   /// Converts [Uint8List] to PNG format if needed.
   Future<Uint8List> get pngUint8List async =>
       image.PngDecoder().isValidFile(this)
           ? this
-          : await (await imageImage).uint8List;
+          : await (await imageImage).pngUint8List;
 
   /// A sync variant.
   Uint8List get pngUint8ListSync => image.PngDecoder().isValidFile(this)
       ? this
-      : imageImageSync.uint8ListSync;
+      : imageImageSync.pngUint8ListSync;
 }

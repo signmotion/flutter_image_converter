@@ -27,4 +27,10 @@ extension ImageConverterOnImageImageExt on image.Image {
 
   /// A sync variant.
   Uint8List get pngUint8ListSync => image.encodePng(this);
+
+  /// Converts [uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async => image.encodeBmp(this);
+
+  /// A sync variant.
+  Uint8List get bmpUint8ListSync => image.encodeBmp(this);
 }

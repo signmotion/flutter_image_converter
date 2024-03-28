@@ -13,8 +13,12 @@ extension ImageConverterOnUiImageExt on ui.Image {
   /// Use PNG format.
   Future<Uint8List> get uint8List async => (await pngByteBuffer).asUint8List();
 
+  /// Converts [uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async => (await uint8List).bmpUint8List;
+
+  /// Converts [uint8List] to PNG format if needed.
   /// Alias for [uint8List].
-  Future<Uint8List> get pngUint8List => uint8List;
+  Future<Uint8List> get pngUint8List async => uint8List;
 
   /// Use PNG format.
   Future<ByteBuffer> get pngByteBuffer async => (await pngByteData).buffer;

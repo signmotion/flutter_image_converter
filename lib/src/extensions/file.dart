@@ -27,20 +27,15 @@ extension ImageConverterOnFileExt on File {
   /// A sync version.
   Uint8List get uint8ListSync => readAsBytesSync();
 
-  /// Converts [uint8List] to PNG format if needed.
-  Future<Uint8List> get pngUint8List async {
-    final raw = await uint8List;
-    return image.PngDecoder().isValidFile(raw)
-        ? raw
-        : await (await raw.imageImage).pngUint8List;
-  }
+  /// Converts [uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async => (await uint8List).bmpUint8List;
+
+  /// A sync version.
+  Uint8List get bmpUint8ListSync => uint8ListSync.bmpUint8ListSync;
 
   /// Converts [uint8List] to PNG format if needed.
+  Future<Uint8List> get pngUint8List async => (await uint8List).pngUint8List;
+
   /// A sync version.
-  Uint8List get pngUint8ListSync {
-    final raw = uint8ListSync;
-    return image.PngDecoder().isValidFile(raw)
-        ? raw
-        : raw.imageImageSync.pngUint8ListSync;
-  }
+  Uint8List get pngUint8ListSync => uint8ListSync.bmpUint8ListSync;
 }

@@ -27,6 +27,12 @@ extension ImageConverterOnListIntExt on List<int> {
   /// A sync variant.
   Uint8List get uint8ListSync => Uint8List.fromList(this);
 
+  /// Converts [uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async => (await uint8List).bmpUint8List;
+
+  /// A sync variant.
+  Uint8List get bmpUint8ListSync => uint8ListSync.bmpUint8ListSync;
+
   /// Converts [uint8List] to PNG format if needed.
   Future<Uint8List> get pngUint8List async => (await uint8List).pngUint8List;
 

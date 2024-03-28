@@ -25,8 +25,12 @@ extension ImageConverterOnImageProviderExt on widget.ImageProvider {
   Future<Uint8List> get uint8List async =>
       (await pngByteData).buffer.asUint8List();
 
+  /// Converts [uint8List] to BMP format if needed.
+  Future<Uint8List> get bmpUint8List async => (await uint8List).bmpUint8List;
+
+  /// Converts [uint8List] to PNG format if needed.
   /// Alias for [uint8List].
-  Future<Uint8List> get pngUint8List => uint8List;
+  Future<Uint8List> get pngUint8List async => uint8List;
 
   /// Use PNG format.
   Future<ByteData> get pngByteData async => (await uiImage).pngByteData;

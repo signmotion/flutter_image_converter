@@ -21,6 +21,8 @@ Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
 
+[![CodeFactor](https://codefactor.io/repository/github/signmotion/flutter_image_converter/badge)](https://codefactor.io/repository/github/signmotion/flutter_image_converter)
+
 Share some ❤️ and star repo to support the project.
 
 _If you write an article about **FlutterImageConverter** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README** 🤝_

@@ -3,6 +3,14 @@
 All notable changes to the project `FlutterImageConverter` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.3.1
+
+- Included **Whats New** section in `README`.
+- Updated a curated list in `README`.
+- Provided emojis to some sections in `README`.
+- Added a quality code badge to `README`. Thanks [CodeFactor](https://codefactor.io).
+- Replaced supported platforms and SDKs to dynamic badges. Thanks [Badgen](https://badgen.net/pub).
+
 ## 0.3.0
 
 - Provided a converter to `Bitmap` format.

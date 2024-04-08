@@ -7,6 +7,10 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter)
 [![Publisher](https://img.shields.io/pub/publisher/flutter_image_converter)](https://pub.dev/publishers/syrokomskyi.com)
 
+![SDK version](https://badgen.net/pub/sdk-version/flutter_image_converter)
+![Supported platforms](https://badgen.net/pub/flutter-platform/flutter_image_converter)
+![Supported SDKs](https://badgen.net/pub/dart-platform/flutter_image_converter)
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/flutter_image_converter/flutter-ci.yml?logo=github-actions&logoColor=white)](https://github.com/signmotion/flutter_image_converter/actions)
 [![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/pulls)
 [![Issues](https://img.shields.io/github/issues/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/issues)
@@ -16,14 +20,6 @@
 Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
-
-| Android | iOS | Linux | MacOS | Windows |
-| :-----: | :-: | :---: | :---: | :-----: |
-|   ✅    | ✅  |  ✅   |  ✅   |   ✅    |
-
-| Dart | Flutter |
-| :--: | :-----: |
-|  ✅  |   ✅    |
 
 Share some ❤️ and star repo to support the project.
 

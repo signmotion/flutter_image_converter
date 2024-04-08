@@ -115,6 +115,10 @@ While working on projects, I meet people who make the project better with their 
 
 ⭐ [eibaan](https://reddit.com/user/eibaan)
 
+## Whats New
+
+Look at [changelog](https://pub.dev/packages/flutter_image_converter/changelog).
+
 ## 🙋‍♀️🙋‍♂️Welcome
 
 Requests and suggestions are warmly welcome.

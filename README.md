@@ -27,6 +27,8 @@ Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
 
+_If you write an article about **FlutterImageConverter** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README** 🤝_
+
 ## Usage
 
 ### Raw bytes from File to Widget Image

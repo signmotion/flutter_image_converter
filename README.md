@@ -17,13 +17,13 @@ Works in any direction as extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
 
-| Android | iOS | Linux | MacOS | Web | Windows |              |
-| :-----: | :-: | :---: | :---: | :-: | :-----: | :----------- |
-|   ✅    | ✅  |  ✅   |  ✅   |  ✘  |   ✅    | **platform** |
+| Android | iOS | Linux | MacOS | Web | Windows |
+| :-----: | :-: | :---: | :---: | :-: | :-----: |
+|   ✅    | ✅  |  ✅   |  ✅   |  ✘  |   ✅    |
 
-| Dart | Flutter |         |
-| :--: | :-----: | :------ |
-|  ✅  |   ✅    | **SDK** |
+| Dart | Flutter |
+| :--: | :-----: |
+|  ✅  |   ✅    |
 
 Share some ❤️ and star repo to support the project.
 

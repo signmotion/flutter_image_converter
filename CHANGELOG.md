@@ -3,6 +3,10 @@
 All notable changes to the project `FlutterImageConverter` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## NEXT
+
+- Added a link to [CodeTriangle](https://codetriage.com) in `README`.
+
 ## 0.3.1
 
 - Included **Whats New** section in `README`.

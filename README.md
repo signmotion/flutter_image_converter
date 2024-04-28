@@ -96,9 +96,7 @@ import 'package:image/image.dart' as image;
 | image.Image   | `imageImage`    |     |             |    ✅    |      ✅      |      ✅       | ✅        |
 | ui.Image      | `uiImage`       |     |     ✅      |          |      ✅      |      ✅       | ✅        |
 | widget.Image  | `widgetImage`   |     |     ✅      |    ✅    |              |      ✅       | ✅        |
-|               |                 |     |             |          |              |               |           |
 | ImageProvider | `imageProvider` |     |     ✅      |    ✅    |      ✅      |               | ✅        |
-|               |                 |     |             |          |              |               |           |
 | Uint8List     | `uint8List`     |     |     ✅      |    ✅    |      ✅      |      ✅       |           |
 
 ## Screenshots

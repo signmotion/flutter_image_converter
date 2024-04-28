@@ -10,6 +10,7 @@ topics:
   - ui
   - bytes
 
+# Compatible with https://semver.org
 # Format:
 #   version: major.minor.patch
 # You can calculate the number version code by this formula:

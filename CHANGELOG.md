@@ -5,9 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.3.2
 
-- Enhanced `README`: added an opening speech in Welcome section, What's New section, shorted sentences, etc.
-- Added a link to [CodeTriangle](https://codetriage.com) in `README`.
-- Replaced badges with supported platforms to <https://badgen.net/pub>.
+- Enhanced `README`: added an opening speech in Welcome section, What's New section, shorted sentences, added a link to [CodeTriangle](https://codetriage.com), replaced badges with supported platforms to <https://badgen.net/pub>, etc.
 - Upgraded dependencies.
 
 ## 0.3.1

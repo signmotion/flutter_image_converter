@@ -35,7 +35,7 @@ _If you write an article about **FlutterImageConverter** or any of [these](https
 File('1.jpg').widgetImage
 ```
 
-Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package image.
+Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package [image](https://github.com/brendan-duncan/image).
 
 ### ImageProvider to UI Image
 

@@ -1,6 +1,6 @@
 # Flutter Image Converter
 
-![Cover - FlutterImageConverter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/cover.webp)
+![Cover - Flutter Image Converter](https://raw.githubusercontent.com/signmotion/flutter_image_converter/master/images/cover.webp)
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Pub Package](https://img.shields.io/pub/v/flutter_image_converter.svg?logo=dart&logoColor=00b9fc&color=blue)](https://pub.dartlang.org/packages/flutter_image_converter)
@@ -16,7 +16,7 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/flutter_image_converter?logo=github&logoColor=white)](https://github.com/signmotion/flutter_image_converter/issues)
 [![Pub Score](https://img.shields.io/pub/points/flutter_image_converter?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/flutter_image_converter/score)
 
-[Well-tested](https://github.com/signmotion/flutter_image_converter/tree/master/test) and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, and base64 string.
+[Well-tested](https://github.com/signmotion/flutter_image_converter/tree/master/test) and easy-to-use Dart & Flutter image transformer package: ui, widgets, [image](https://pub.dev/packages/image), ImageProvider, bytes, etc.
 Works in any direction as an extension.
 **You no longer have to worry about writing code to convert images in different formats.**
 Feel free to use it in your awesome project.
@@ -25,7 +25,7 @@ Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
 
-_If you write an article about **FlutterImageConverter** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README** 🤝_
+_If you write an article about **FlutterImageConverter** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README**_ 🤝
 
 ## 🚀Usage
 
@@ -113,25 +113,29 @@ While working on projects, I meet people who make the project better with their 
 
 ⭐ [eibaan](https://reddit.com/user/eibaan)
 
-## Whats New
+## 👁️What's New
 
 Look at [changelog](https://pub.dev/packages/flutter_image_converter/changelog).
 
 ## 🙋‍♀️🙋‍♂️Welcome
 
-Requests and suggestions are warmly welcome.
+If you encounter any problems, feel free to [open an issue](https://github.com/signmotion/flutter_image_converter/issues). If you feel the package is missing a feature, please [raise a ticket](https://github.com/signmotion/flutter_image_converter/issues) on Github and I'll look into it. Requests and suggestions are warmly welcome. Danke!
 
-Contributions are what make the open-source community such a great place to learn, create, and be inspired.
+Contributions are what make the open-source community such a great place to learn, create, take a new skills, and be inspired.
 
 If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
 
-- [Guide to making a first contribution](https://github.com/firstcontributions/first-contributions). Many languages.
+- [Guide to Making a First Contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
 - [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
+- [CodeTriangle](https://codetriage.com). Free community tools for contributing to Open Source projects.
 
 The package **FlutterImageConverter** is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/flutter_image_converter). Feel free to report issues
 or create a pull-request there.
+
+General questions are best asked on
+[StackOverflow](https://stackoverflow.com/questions/tagged/flutter_image_converter).
 
 And here is a curated list of how you can help:
 
@@ -141,7 +145,7 @@ And here is a curated list of how you can help:
 - Sharing your examples. If you've experimented with our use cases or have crafted some examples of your own, feel free to add them to the `example` directory. Your practical insights can enrich our resource pool.
 - Fix typos/grammar mistakes.
 - Report bugs and scenarios that are difficult to implement.
-- Implement new features by making a pull-request (look below).
+- Implement new features by making a pull-request.
 
 ## 🕧TODO (perhaps)
 
@@ -155,6 +159,6 @@ Once you start using the **FlutterImageConverter**, it will become easy to choos
 - IconData?
 - Transform images to any formats?
 
-It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, these notes will help you choose the suitable feature and become a contributor to the open-source community.
+It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, the above notes will help you choose the suitable "feature" and become a contributor to the open-source community.
 
 Created [with ❤️](https://syrokomskyi.com)

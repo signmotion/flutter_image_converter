@@ -3,9 +3,12 @@
 All notable changes to the project `FlutterImageConverter` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## NEXT
+## 0.3.2
 
+- Enhanced `README`: added an opening speech in Welcome section, What's New section, shorted sentences, etc.
 - Added a link to [CodeTriangle](https://codetriage.com) in `README`.
+- Replaced badges with supported platforms to <https://badgen.net/pub>.
+- Upgraded dependencies.
 
 ## 0.3.1
 

@@ -35,8 +35,10 @@ dart_code_metrics:
     - no-equal-then-else
     - no-object-declaration
     - potential-null-dereference
+
   metrics-exclude:
     - test/**
+
   metrics:
     number-of-arguments: 8
     number-of-methods: 32

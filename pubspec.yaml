@@ -1,13 +1,12 @@
 name: flutter_image_converter
 description: >-
-  Ultimative converter between Dart & Flutter images: ui, widgets, package image,
+  Ultimate converter between Dart & Flutter images: ui, widgets, package image,
   ImageProvider, raw bytes, Base64 string. Works in any direction.
 repository: https://github.com/signmotion/flutter_image_converter
 topics:
   - converter
   - image
   - widget
-  - ui
   - bytes
 
 # Compatible with https://semver.org
@@ -24,12 +23,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image: ^4.1.7
+  image: ^4.2.0
 
 dev_dependencies:
-  flutter_lints: ^3.0.2
-  lints: ^3.0.0
-  test: ^1.25.2
+  flutter_lints: ^4.0.0
+  lints: ^4.0.0
+  test: ^1.25.8
 
 flutter:
   uses-material-design: true

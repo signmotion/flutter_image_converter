@@ -1,14 +1,12 @@
 library;
 
 import 'dart:async';
-import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/widgets.dart' as widget;
 import 'package:image/image.dart' as image;
 
-part 'src/extensions/file.dart';
 part 'src/extensions/image_image.dart';
 part 'src/extensions/image_provider.dart';
 part 'src/extensions/list_int.dart';

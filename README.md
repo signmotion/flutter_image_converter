@@ -92,6 +92,7 @@ import 'package:image/image.dart' as image;
 While working on projects, I meet people who make the project better with their outsider and professional view. I want to write down their names here..... and I'd be happy to add your name as well.
 
 ⭐ [C Davis aka faithoflifedev](https://github.com/faithoflifedev): [Support web platform](https://github.com/signmotion/flutter_image_converter/pull/1)
+
 ⭐ [eibaan](https://reddit.com/user/eibaan)
 
 ## ✨ What's New

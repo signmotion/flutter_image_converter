@@ -29,14 +29,6 @@ _If you write an article about **FlutterImageConverter** or any of [these](https
 
 ## 🚀 Usage
 
-### Raw bytes from File to Widget Image
-
-```dart
-File('1.jpg').widgetImage
-```
-
-Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package [image](https://github.com/brendan-duncan/image).
-
 ### ImageProvider to UI Image
 
 ```dart
@@ -55,18 +47,6 @@ Image(...).widgetImage
 bytes.widgetImage
 ```
 
-### File to PNG raw bytes
-
-```dart
-File('nature.webp').pngUint8List
-```
-
-### File to BMP raw bytes
-
-```dart
-File('nature.webp').bmpUint8List
-```
-
 ### ImageProvider to PNG raw bytes
 
 ```dart
@@ -80,6 +60,8 @@ Supports the image providers:
 - `MemoryImage`
 - `NetworkImage`
 - any providers from [pub.dev](https://pub.dev/packages?q=image+provider) inherited from `ImageProvider`
+
+Can detect [all formats](https://github.com/brendan-duncan/image/blob/main/doc/formats.md) from the package [image](https://github.com/brendan-duncan/image).
 
 See folders `example` and `test` for more use cases.
 
@@ -109,6 +91,7 @@ import 'package:image/image.dart' as image;
 
 While working on projects, I meet people who make the project better with their outsider and professional view. I want to write down their names here..... and I'd be happy to add your name as well.
 
+⭐ [C Davis aka faithoflifedev](https://github.com/faithoflifedev): [Support web platform](https://github.com/signmotion/flutter_image_converter/pull/1)
 ⭐ [eibaan](https://reddit.com/user/eibaan)
 
 ## ✨ What's New
@@ -150,9 +133,8 @@ And here is a curated list of how you can help:
 Once you start using the **FlutterImageConverter**, it will become easy to choose the functionality to contribute. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
 
 - Explane `Image`, `ImageProvider`, etc. [1](https://stackoverflow.com/a/56431615/963948)
-- Check out the Web platform.
+- DONE Check out the Web platform. THANKS [C Davis aka faithoflifedev](https://github.com/signmotion/flutter_image_converter/pull/1).
 - Detect formats provided `instantiateImageCodec`.
-- Converters to `File`? `fileBmpUint8ListSync`, `filePngUint8ListSync`... Auto extension.
 - SVG?
 - IconData?
 - Transform images to any formats?

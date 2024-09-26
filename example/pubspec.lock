@@ -61,6 +61,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  js:
+    dependency: transitive
+    description:
+      name: js
+      sha256: c1b2e9b5ea78c45e1a0788d29606ba27dc5f71f019f32ca5140f61ef071838cf
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.0"
   lints:
     dependency: transitive
     description:
@@ -131,4 +139,4 @@ packages:
     source: hosted
     version: "6.5.0"
 sdks:
-  dart: ">=3.4.0 <4.0.0"
+  dart: ">=3.3.0-0 <4.0.0"

@@ -3,6 +3,12 @@
 All notable changes to the project `FlutterImageConverter` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.0
+
+- Web platform support. Thanks [@faithoflifedev](https://github.com/faithoflifedev) and [Google Vision Images Flutter Widget](https://pub.dev/packages/google_vision_flutter).
+- BREAKING CHANGES. Working with `File` has been excluded. You can find this extension in `test\helpers\check_image.dart`.
+- Updated `README`.
+
 ## 0.3.4
 
 - Provided a link to [webduet.de](https://webduet.de "The Modern Planet-Scale Site for Your Ambitions") into `README`.

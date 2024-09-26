@@ -7,7 +7,7 @@ topics:
   - converter
   - image
   - widget
-  - ui
+  - format
   - bytes
 
 # Compatible with https://semver.org
@@ -16,7 +16,7 @@ topics:
 # You can calculate the number version code by this formula:
 #   code = m[A]jor * 100 * 100 + m[I]nor * 100 + [P]atch
 # Otherwise: +AAIIPP
-version: 0.3.3
+version: 0.3.4
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -27,8 +27,8 @@ dependencies:
   image: ^4.2.0
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
-  lints: ^4.0.0
+  flutter_lints: ^5.0.0
+  lints: ^5.0.0
   test: ^1.25.8
 
 flutter:
